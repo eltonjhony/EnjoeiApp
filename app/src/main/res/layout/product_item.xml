@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/productItemView"
+        android:layout_width="match_parent"
+        android:background="@drawable/bg_corners"
+        android:layout_height="308dp">
+
+    <ImageView
+            android:id="@+id/productImageView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginBottom="@dimen/regular_item_spacing"
+            tools:src="@mipmap/ic_enjoei"
+            android:contentDescription="@string/product_image_content_description"
+            android:background="#F4F2F0"
+            android:scaleType="centerCrop"
+            app:layout_constraintBottom_toTopOf="@+id/titleTextView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <com.eltonjhony.enjoeiapp.presentation.views.DiscountView
+            android:id="@+id/discountView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+    <TextView
+            android:id="@+id/titleTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:layout_marginBottom="5dp"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            android:textColor="#5B5855"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Tenis maneiro"
+            app:layout_constraintBottom_toTopOf="@+id/priceTextView"/>
+
+    <TextView
+            android:id="@+id/priceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="5dp"
+            android:textAlignment="center"
+            android:textColor="#F77274"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:fontFamily="@font/proximanova_semibold"
+            tools:ignore="MissingPrefix"
+            tools:text="R$ 42,00"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/reactionView"/>
+
+    <TextView
+            android:id="@+id/sizeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            app:layout_constraintStart_toEndOf="@+id/priceTextView"
+            app:layout_constraintTop_toTopOf="@+id/priceTextView"
+            tools:text="- tam 37" />
+
+    <com.eltonjhony.enjoeiapp.presentation.views.LikesView
+            android:id="@+id/reactionView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

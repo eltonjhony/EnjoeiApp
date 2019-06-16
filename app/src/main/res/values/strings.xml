@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">EnjoeiApp</string>
+    <string name="home_label">Navegar</string>
+    <string name="search_label">Buscar</string>
+    <string name="sell_label">Vender</string>
+    <string name="messages_label">Mensagens</string>
+    <string name="profile_label">Conta</string>
+
+    <string name="price_with_discount_description">%1$s off em até %2$dx</string>
+    <string name="price_without_discount_description">em até %1$dx</string>
+    <string name="connection_error_title">turbulências na rede</string>
+    <string name="connection_error_description">nosso cyber voo tá chacoalhando. dê uma checada na sua internet pra
+        continuar com a gente :P.
+    </string>
+
+    <string name="error_generic_description">Não se preocupe, já estamos cuidando para que este problema inesperado não ocorra novamente :P</string>
+    <string name="try_again_label">tentar de novo</string>
+
+    <string name="comment_image_content_description">Imagem de comentário</string>
+    <string name="likes_image_content_description">Image de likes</string>
+    <string name="product_image_content_description">Imagem do produto</string>
+    <string name="promo_banner_content_description">banner da promoção</string>
+    <string name="error_image_content_description">imagem de erro</string>
+    <string name="channel_name">enjoei channel</string>
+    <string name="channel_description">notification channel</string>
+    <string name="notification_title">Aproveita!</string>
+    <string name="notification_message">Tem produto novo e com frete grátis na área</string>
+    <string name="promotions_title">Promoções Exclusivas</string>
+</resources>

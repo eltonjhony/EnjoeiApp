@@ -1,0 +1,3 @@
+<resources>
+    <dimen name="regular_item_spacing">10dp</dimen>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<MotionScene xmlns:motion="http://schemas.android.com/apk/res-auto">
+
+    <Transition
+            motion:constraintSetStart="@layout/start_product_content"
+            motion:constraintSetEnd="@layout/product_content"
+            motion:duration="1000">
+    </Transition>
+
+</MotionScene>

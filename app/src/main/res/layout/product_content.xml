@@ -1,0 +1,82 @@
+<androidx.constraintlayout.motion.widget.MotionLayout
+        android:id="@+id/motionLayoutContainer"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutDescription="@xml/motion_scene">
+
+    <TextView
+            android:id="@+id/priceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"
+            android:textColor="#5B5855"
+            android:textSize="22sp"
+            tools:text="R$ 400" />
+
+    <com.eltonjhony.enjoeiapp.presentation.views.SocialCounterView
+            android:id="@+id/socialCounterView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/originalPriceTextView"
+            android:layout_marginStart="8dp"
+            app:layout_constraintStart_toEndOf="@+id/priceTextView"
+            app:layout_constraintTop_toTopOf="@+id/priceTextView"
+            android:textColor="#F77274"
+            android:textSize="22sp"
+            tools:text="R$ 350"
+            android:fontFamily="@font/proximanova_semibold"/>
+
+    <TextView
+            android:id="@+id/descTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="10% off em até 12x"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/priceTextView"/>
+
+    <TextView
+            android:id="@+id/titleTextView"
+            tools:text="Tenis maneiro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="#5B5855"
+            android:textSize="22sp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="26dp"
+            app:layout_constraintTop_toBottomOf="@id/descTextView"/>
+
+    <TextView
+            android:id="@+id/contentTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:textColor="#5B5855"
+            android:textSize="16sp"
+            app:layout_constraintTop_toBottomOf="@+id/titleTextView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:text="Lorem ipsum dolor sit amet, eros graeci graeco an nam. Movet urbanitas abhorreant et ius, no inani impetus eam, quo cu ludus saepe mnesarchum."/>
+
+</androidx.constraintlayout.motion.widget.MotionLayout>
